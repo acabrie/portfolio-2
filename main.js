@@ -7,3 +7,7 @@ function toggleNav(){
     navigation.classList.toggle('open')
     navToggle.classList.toggle('open')
 }
+
+
+// Form Validation
+

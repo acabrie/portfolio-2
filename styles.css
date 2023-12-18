@@ -297,7 +297,7 @@ body{
     height: 8px;
     width: 104%;
     position: absolute;
-    top: 31px;
+    top: 30px;
     left: -5px;
     border-radius: 5px;
     background-color: #020617;
@@ -347,6 +347,13 @@ body{
     margin-top: 5.6525rem;
 }
 
+@media (min-width: 35em){
+    .name::after{
+        top: 46px;
+        left: -7px;
+    }
+}
+
 @media (min-width: 50em){
     .name::after{
         top: 46px;
@@ -390,11 +397,12 @@ body{
 }
 
 .article-container{
+    display: flex;
+    flex-direction: column;
     margin-top: 3rem;
     padding-bottom: 3rem;
     border-bottom: 1px solid #000;
 }
-
 
 
 .image img{
@@ -416,7 +424,89 @@ body{
 
 .tabs{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 3rem;
+    padding-inline: 1rem;
+}
+
+.tab{
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+    z-index: 1000;
+}
+
+
+.beige::after{
+    content: '';
+    height: 7px;
+    width: 110%;
+    position: absolute;
+    top: 14px;
+    left: -4px;
+    border-radius: 5px;
+    background-color: #D5966B;
+    opacity: 0.25;
+    
+}
+
+.beige:hover::after,
+.beige:focus::after{
+    opacity: 1;
+  
+}
+
+.dark::after{
+    content: '';
+    height: 7px;
+    width: 110%;
+    position: absolute;
+    top: 14px;
+    left: -4px;
+    border-radius: 5px;
+    background-color: #151515;
+    opacity: 0.25;
+}
+
+.dark:hover::after,
+.dark:focus::after{
+    opacity: 1;
+}
+
+.blue::after{
+    content: '';
+    height: 7px;
+    width: 110%;
+    position: absolute;
+    top: 14px;
+    left: -4px;
+    border-radius: 5px;
+    background-color: #0EA5E9;
+    opacity: 0.25;
+}
+
+.blue:hover::after,
+.blue:focus::after{
+    opacity: 1;
+}
+
+
+.yellow::after{
+    content: '';
+    height: 7px;
+    width: 110%;
+    position: absolute;
+    top: 14px;
+    left: -4px;
+    border-radius: 5px;
+    background-color: #FACC15;
+    opacity: 0.25;
+}
+
+.yellow:hover::after,
+.yellow:focus::after{
+    opacity: 1;
 }
 
 .project-4{
@@ -424,4 +514,53 @@ body{
 }
 
 
+@media (min-width: 35em){
+    .projects-container{
+        width: 60%;
+    }
+}
 
+@media (min-width: 55em){
+    .projects-container{
+        width: 70%;
+    }
+
+    .article-container{
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .image{
+        width: 50%;
+        height: 385px;
+    }
+
+    .image img{
+        height: 100%;
+    }
+
+    .content{
+        text-align: left;
+        margin: 0;
+        width: 50%;
+    }
+
+    .content p{
+        width: 90%;
+    }
+
+    .project-2{
+        flex-direction: row-reverse;
+
+    }
+
+    .project-4{
+        flex-direction: row-reverse;
+    }
+
+    .tabs{
+        padding: 0;
+        padding-right: 1rem;
+        justify-content: start;
+    }
+}
