@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+    <script src="main.js" defer></script>
     <title>Andrew Cabrie Portfolio</title>
 
     <link href="styles.css" rel="stylesheet">
@@ -19,8 +20,8 @@
         <nav class="navbar">
             <img src="./images/logo.png" alt="logo" class="logo">
             <ul class="primary-nav">
-                <li><a href="#projects" class="projects-a font-lora fs-1 fw-500" onclick="toggleNav()">PROJECTS</a></li>
                 <li><a href="#about" class="about-a font-lora fs-1 fw-500" onclick="toggleNav()">ABOUT</a></li>
+                <li><a href="#projects" class="projects-a font-lora fs-1 fw-500" onclick="toggleNav()">PROJECTS</a></li>
                 <li><a href="#contact" class="contact-a font-lora fs-1 fw-500" onclick="toggleNav()">CONTACT</a></li>
             </ul> 
             <div class="hamburger-menu">
@@ -38,7 +39,7 @@
 
     <section id="hero">
         <div class="main-heading">
-            <h1 class="font-mont fs-4">Hello, my name is <span class="name font-lora fw-400">Andrew Cabrie</span> and I am a junior Software Developer.</h1>
+            <h1 class="font-mont fs-4">Hello, my name is <span class="name font-lora fw-400">Andrew Cabrie</span> and I am a junior Frontend Developer.</h1>
         </div>
        
        <a href="#" class="resume font-lora fw-500 fs-3">Download CV</a>
@@ -48,6 +49,14 @@
             <p class="scroll">SCROLL</p>
        </div>
        
+    </section>
+
+
+    <!------------- About Section ---------------->
+
+    <section id="about">
+        <h2 class="projects-heading font-lora fw-400 fs-5 center">About</h2>
+        <p></p>
     </section>
 
      <!------------- Projects Section ---------------->
@@ -146,41 +155,37 @@
         </div>    
     </section>
 
-     <!------------- About Section ---------------->
-
-    <section id="about">
-        <h2 class="projects-heading font-lora fw-400 fs-5 center">About</h2>
-    </section>
 
      <!------------- Contact Section ---------------->
 
     <section id="contact">
+        <h2 class="contact-heading font-lora fw-400 fs-5 center">Contact</h2>
         <div class="contact-container">
             <div class="contact-info">
-                <h2 class="projects-heading font-lora fw-400 fs-5 center">Contact</h2>
-                <h4 class="font-lora fw-500 fs-2 center">Email:</h4>
-                <p class="email font-mont fw-400 fs-2 center">acabrie@gmail.com</p>
-                <h4 class="font-lora fw-500 fs-2 center">Contact Number:</h4>
-                <p class="number font-mont fw-400 fs-2 center">+44 74 819 78804</p>
+                <h4 class="email-hd font-lora fw-500 fs-2">Email:</h4>
+                <p class="email font-mont fw-400 fs-2">acabrie@gmail.com</p>
+                <h4 class="contact-num-hd font-lora fw-500 fs-2">Contact Number:</h4>
+                <p class="number font-mont fw-400 fs-2">+44 74 819 78804</p>
             </div>
             
             <div class="form-container">
                 <form class="form">
-                    <label for="name" class="font-lora fw-500 fs-2">Name:</label>
+                    <label for="name" class="name-label font-lora fw-500 fs-2">Name:</label>
                     <input type="text" name="name" id="name" spellcheck="false" class="input-field">
 
-                    <label for="email" class="font-lora fw-500 fs-2">Email:</label>
+                    <label for="email" class="email-label font-lora fw-500 fs-2">Email:</label>
                     <input type="email" name="email" id="email" spellcheck="false" class="input-field">
                     <p class="error-msg font-mont fw-500">Please provide a valid email address</p>
 
-                    <textarea name="textarea" id="" cols="40" rows="10"></textarea>
+                    <textarea name="textarea" id="" cols="40" rows="10" class="text-area" placeholder="Send me a message..."></textarea>
+                    <button type="submit" class="submit-btn font-lora">Submit</button>
                 </form>
             </div>
         </div>
        
         
     </section>
-    <script src="main.js"></script>
+    
 </body>
 </html>
 
