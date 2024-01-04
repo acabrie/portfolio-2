@@ -652,6 +652,7 @@ body{
     height: 35px;
     border: none;
     border-bottom: 1px solid #000;
+    border-radius: none;
     width: 100%;
 }
 
@@ -680,6 +681,7 @@ body{
     border: none;
     font-size: 1.25rem;
     background-color: #FFF;
+    color: #000;
     margin-top: 2rem;
     align-self: flex-start;
     font-weight: 500;
