@@ -416,6 +416,7 @@ body{
 
 .about-me{
     line-height: 22px;
+    text-align: center;
 }
 
 .skills-container{
@@ -534,6 +535,10 @@ body{
 
     .about-text{
         width: 50%;
+    }
+
+    .about-me{
+        text-align: left;
     }
 
     .skills-container{
@@ -908,7 +913,7 @@ body{
     background-color: #FFF;
     color: #000;
     margin-top: 2rem;
-    align-self: flex-start;
+    align-self: flex-end;
     font-weight: 500;
     position: relative;
 }
