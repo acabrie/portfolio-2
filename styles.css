@@ -91,6 +91,8 @@ img{
 
 .center{text-align: center;}
 
+
+
 /*********************/
 /** Header Section ***/
 /*********************/
@@ -275,12 +277,14 @@ body{
 /*** Hero Section ****/
 /*********************/
 
+
 #hero{
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 821px;
     margin-inline: auto;
+    
 }
 
 .main-heading{
@@ -370,9 +374,9 @@ body{
 
 @media (min-width: 70em){
 
-    /* .hero{
-        min-height: 90vh;
-    } */
+    #hero{
+        padding-bottom: 6rem;
+    }
 
     .main-heading{
         width: 100%;
@@ -400,7 +404,14 @@ body{
 
 .about-container{
     display: flex;
+    margin-inline: auto;
     flex-direction: column;
+    width: 90%;
+
+}
+
+.about-heading{
+    margin-block: 5rem;
 }
 
 .skills-container{
@@ -419,8 +430,29 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    gap: 4rem;
 }
 
+.skills-hd{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 55em){
+    .about-container{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+
+    .about-text{
+        width: 50%;
+    }
+
+    .skills-container{
+        width: 50%;
+    }
+}
 
 
 /*************************/
@@ -429,7 +461,7 @@ body{
 
 
 .projects-heading{
-    margin-top: 5rem;
+    margin-block: 5rem;
 }
 
 .projects-container{
@@ -628,7 +660,8 @@ body{
     position: relative;
 }
 
-/* .email-hd{
+.email-hd{
+    display: inline-block;
     position: relative;
 }
 
@@ -637,14 +670,15 @@ body{
     height: 7px;
     width: 110%;
     position: absolute;
-    top: 14px;
-    left: -4px;
+    top: 18px;
+    left: -3px;
     border-radius: 5px;
     background-color: #EA580C;
     opacity: 0.25;
 }
 
 .contact-num-hd{
+    display: inline-block;
     position: relative;
 }
 
@@ -653,12 +687,12 @@ body{
     height: 7px;
     width: 110%;
     position: absolute;
-    top: 14px;
-    left: -4px;
+    top: 18px;
+    left: -7px;
     border-radius: 5px;
     background-color: #0891B2;
     opacity: 0.25;
-} */
+} 
 
 
 .form{
