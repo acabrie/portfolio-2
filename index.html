@@ -7,10 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+    <link href="./css/styles.css" rel="stylesheet">
     <script src="main.js" defer></script>
     <title>Andrew Cabrie Portfolio</title>
-
-    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 
@@ -42,7 +41,7 @@
             <h1 class="font-mont fs-4">Hello, my name is <span class="name font-lora fw-400">Andrew Cabrie</span> and I am a junior Frontend Developer.</h1>
         </div>
        
-       <a href="#" class="resume font-lora fw-500 fs-3">Download CV</a>
+       <a href="#" class="resume font-lora fw-500 fs-3" download>Download CV</a>
 
        <div class="line-container">
             <img src="./images/Line.png" alt="line" class="line"> 
@@ -196,7 +195,7 @@
                     <input type="email" name="email" id="email" spellcheck="false" class="input-field" onkeydown="validation()" required>
                     <p class="error-msg font-mont fw-500">Please provide a valid email address</p>
 
-                    <input type="hidden" name="_next" value="https://acabrie.github.io/portfolio-2/thankyou.html">
+                    <input type="hidden" name="_next" value="https://www.andywebdev.com/thankyou.html">
                     <input type="hidden" name="_captcha" value="false">
 
                     <textarea name="textarea" id="" cols="40" rows="10" class="text-area" placeholder="Send me a message..."></textarea>

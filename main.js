@@ -20,13 +20,12 @@ let isValid;
 function validation(){
 
     if(!email.value.match(pattern)){
-        error.style.display = "inline-block";
+        error.style.display = "block";
         email.style.borderColor = "hsl(4, 100%, 67%)";
         return false
     } else{
         error.style.display = "none"
-        email.style.borderColor = "hsl(119, 87%, 78%)";
-        
+        email.style.borderColor = "hsl(142, 76%, 36%)"
         return isValid = true
     };
 
