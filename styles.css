@@ -91,7 +91,7 @@ img{
 
 .center{text-align: center;}
 
-
+.no-dec{text-decoration: none;}
 
 /*********************/
 /** Header Section ***/
@@ -420,6 +420,8 @@ body{
     border: 1px solid #000;
     max-width: 500px;
     height: 250px;
+    margin-inline: auto;
+    width: 100%;
 }
 
 .skills-container h3{
@@ -437,6 +439,87 @@ body{
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
+
+.html{
+    position: relative;
+}
+
+.html::after{
+    content: '';
+    height: 7px;
+    width: 65%;
+    position: absolute;
+    top: 17px;
+    left: -4px;
+    border-radius: 5px;
+    background-color: #EA580C;
+    opacity: 0.5;
+}
+
+.css{
+    position: relative;
+}
+
+.css::after{
+    content: '';
+    height: 7px;
+    width: 48%;
+    position: absolute;
+    top: 17px;
+    left: -4px;
+    border-radius: 5px;
+    background-color: #1D4ED8;
+    opacity: 0.5;
+}
+
+.javascript{
+    position: relative;
+}
+
+.javascript::after{
+    content: '';
+    height: 7px;
+    width: 110%;
+    position: absolute;
+    top: 17px;
+    left: -4px;
+    border-radius: 5px;
+    background-color: #FACC15;
+    opacity: 0.5;
+}
+
+.react{
+    position: relative;
+}
+
+.react::after{
+    content: '';
+    height: 7px;
+    width: 90%;
+    position: absolute;
+    top: 17px;
+    left: -4px;
+    border-radius: 5px;
+    background-color: #0EA5E9;
+    opacity: 0.5;
+}
+
+.python{
+    position: relative;
+}
+
+.python::after{
+    content: '';
+    height: 7px;
+    width: 110%;
+    position: absolute;
+    top: 17px;
+    left: -4px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #FACC15 0%, #FACC15 50%, #1D4ED8 50%, #1D4ED8 100%);
+    opacity: 0.5;
+}
+
 
 @media (min-width: 55em){
     .about-container{
@@ -651,12 +734,17 @@ body{
 .contact-container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.85fr 1fr;
 }
 
-.contact-info{
-    text-align: center;
+.contact-heading{
     margin-top: 4rem;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -723,6 +811,7 @@ body{
     
 .error-msg{
     display: none;
+    padding-top: 1rem;
     font-size: 0.7rem;
     color: #B91C1C;
 }
