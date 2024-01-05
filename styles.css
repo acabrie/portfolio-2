@@ -833,10 +833,10 @@ body{
 .email-hd::after{
     content: '';
     height: 7px;
-    width: 110%;
+    width: 115%;
     position: absolute;
-    top: 18px;
-    left: -3px;
+    top: 19px;
+    left: -4px;
     border-radius: 5px;
     background-color: #EA580C;
     opacity: 0.25;
@@ -852,7 +852,7 @@ body{
     height: 7px;
     width: 110%;
     position: absolute;
-    top: 18px;
+    top: 19px;
     left: -7px;
     border-radius: 5px;
     background-color: #0891B2;
@@ -883,18 +883,20 @@ body{
     border-bottom: 1px solid #000;
     border-radius: none;
     width: 100%;
+    outline: none;
 }
 
     
 .error-msg{
     display: none;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     font-size: 0.7rem;
     color: #B91C1C;
+    margin: 0;
 }
 
 .text-area{
-    
+    outline: none;
     margin-top: 4rem;
     border: none;
     border: 1px solid #000;
