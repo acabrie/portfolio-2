@@ -414,6 +414,10 @@ body{
     margin-block: 5rem;
 }
 
+.about-me{
+    line-height: 22px;
+}
+
 .skills-container{
     display: flex;
     flex-direction: column;
