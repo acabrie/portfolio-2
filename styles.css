@@ -394,6 +394,36 @@ body{
 
 
 /*************************/
+/*** About Section ****/
+/***********************/
+
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    max-width: 500px;
+    height: 250px;
+}
+
+.skills-container h3{
+    text-align: center;
+}
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+/*************************/
 /*** Projects Section ***/
 /***********************/
 
